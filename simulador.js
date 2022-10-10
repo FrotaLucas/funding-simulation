@@ -1,3 +1,4 @@
+//style
 window.addEventListener( "load",function () 
 {
   simular();
