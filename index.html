@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulador de Financiamento</title>
+<link rel="stylesheet" href="style.css">
+<script src="simulador.js"></script>
+</head>
+<body>
+
+
+  <div class="container">
+    
+  <h1> Funding simulation</h1>
+  <form onsubmit= "simular()" id = "entradas"> 
+   <div class="form-container">  
+    <label for="valor" style="display: block;"> Value </label>
+    <input id="valor" type="number" value = "200000"/>
+  </div>
+
+  <div class="form-container"> 
+    <label for="prazo" style="display: block;">Term (years)</label> 
+    <input id="prazo" type="number" value="20" />
+  </div>
+   
+    <div class="form-container"> 
+    <label for="interest" type="number" style="display: block;"> Interest (year)</label> 
+    <input id="jurosaa" type="number" value="0.08" />
+    </div>
+  </form>
+  
+      <button style="display: block;">Simulate</button>
+
+<h2> Result </h2>
+<div class="calculations">
+ 
+  <div class="calculations-container"> 
+    <label style="display: block;"> Term (month)</label>
+    <input id="prestacoes" type="number" readonly/>  
+  </div>
+
+  <div class="calculations-container"> 
+  <label style="display: block;"> Juros (month)</label>
+  <input id="jurosam" type="number" readonly> 
+  </div>
+  
+  <div class="calculations-container"> 
+  <label style="display: block;"> Juros accrued</label> 
+  <input id="jurostotal" type="number" readonly/>  
+  </div>
+</div>
+
+<table>
+  <thead> 
+    <tr> 
+    <th> Installment</th>  
+    <th> Amortization</th>  
+    <th> Interest</th>
+    <th> Total</th> 
+    </tr> 
+  </thead>
+  <tbody>
+    <tr> 
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr> 
+    <tr> 
+        <td>2</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        </tr> 
+    <tr> 
+      <td>3</td>
+        <td></td>
+        <td></td>
+        <td></td>         
+       </tr> 
+       <tr>
+      <td>4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+       </tr> 
+       <tr>
+        <td>5</td>
+        <td></td>
+        <td></td>
+        <td></td>
+         </tr> 
+  </tbody>
+</table>
+
+  </div>
+  
+</body>
+</html> 
